@@ -1,0 +1,38 @@
+{
+  "name": "tree",
+  "version": "1.0.0",
+  "description": "wc tree",
+  "main": "lib/index.min.js",
+  "scripts": {
+    "build": "webpack --mode=production --config webpack.config.js",
+    "build-dev": "webpack --mode=development --config webpack.config.js",
+    "build-mock": "webpack --mode=development --mock=1 --config webpack.config.js",
+    "demo": "cd demo && webpack-dev-server --mode=development --config webpack.config.js",
+    "demo-s": "cd demo && webpack --mode=development --config webpack.config.js",
+    "all": "yarn build-dev && yarn demo",
+    "all-m": "yarn build-mock && yarn demo",
+    "all-s": "yarn build-dev && yarn demo-s"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "duplicate-package-checker-webpack-plugin": "^3.0.0",
+    "extract-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  },
+  "dependencies": {}
+}

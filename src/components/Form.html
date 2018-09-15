@@ -1,0 +1,47 @@
+<div class=title>
+    Selección de centros
+    <span class='aspa'></span>
+</div>
+<div class='cuerpo'>
+    <div class='info'>
+        Empresa: <span class='empresa'></span>
+        Centro: <span class='centro'></span>
+        Descripción: <span class='desc'></span>
+    </div>
+    <div class='principal'>
+        <div class='tabs'>
+            <div class='tab jerarquia'>Jerarquía</div>
+            <div class='tab busqueda disabled'>Búsqueda</div>
+        </div>
+        <div id='clients'>
+            <div id='clientJ' class='client'>
+                <bk-wc-ui-tree></bk-wc-ui-tree>
+            </div>
+            <div id='clientB' class='client disabled'>
+                <div class='selectNiveles'>
+                    <div class='capNiveles'>
+                        <nav class='mostrar'>Mostrar centros de los siguientes niveles:</nav>
+                        <nav class='criterios'>Criterios de seleción</nav>
+                        <span></span>
+                    </div>
+                    <div class='niveles'>
+                    </div>
+                    <div class='query'>
+                        <span>Filtrar resultados por centro: </span>
+                        <input type='text' id='filterCentro'/>
+                        <span>Descripción: </span>
+                        <input type='text' id='filterDesc'/>
+                        <button id='filtrar' disabled>Filtro</button>
+                    </div>
+                </div>
+                <div>
+                   <div id='resultados'></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='botonera'>
+   <button class='aceptar' disabled>Aceptar</button>
+   <button class='abandonar'>Abandonar</button>
+</div>

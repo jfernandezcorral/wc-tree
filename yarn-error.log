@@ -1,0 +1,75 @@
+Arguments: 
+  C:\Users\A153865\Desktop\node-v10.5.0-win-x64\node.exe C:\Users\A153865\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js all
+
+PATH: 
+  C:\Users\A153865\Desktop\node-v10.5.0-win-x64;C:\Program Files (x86)\CA\SC\CAWIN\;C:\Program Files (x86)\Git\bin;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\ProgramData\Oracle\Java\javapath;C:\Program Files\Java\jdk1.7.0_76\jre\bin;C:\Ruby21-x64\bin;C:\Python27;C:\Program Files\nodejs;c:\program files (x86)\imagemagick-6.2.6-q16;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\bin;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\bin64;C:\Program Files (x86)\IBM\WebSphere MQ\bin64;C:\Program Files (x86)\IBM\WebSphere MQ\bin;C:\Program Files (x86)\IBM\WebSphere MQ\tools\c\samples\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\bin;C:\Program Files (x86)\CA\SC\Csam\SockAdapter\bin64;C:\Program Files (x86)\CA\SC\CBB\;C:\Program Files (x86)\CA\DSM\bin;C:\PROGRA~2\CA\SC\CAM\bin;C:\Users\A153865\AppData\Roaming\npm;C:\bin\apache-maven-3.5.0\bin;C:\bin\fiddlern
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  10.5.0
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  {
+    "name": "tree",
+    "version": "1.0.0",
+    "description": "wc tree",
+    "main": "lib/index.min.js",
+    "scripts": {
+      "build": "webpack --mode=production --config webpack.config.js",
+      "build-dev": "webpack --mode=development --config webpack.config.js",
+      "build-mock": "webpack --mode=development --mock=1 --config webpack.config.js",
+      "demo": "cd demo && webpack-dev-server --mode=development --config webpack.config.js",
+      "demo-s": "cd demo && webpack --mode=development --config webpack.config.js",
+      "all": "yarn build-dev && yarn demo",
+      "all-m": "yarn build-mock && yarn demo",
+      "all-s": "yarn build-dev && yarn demo-s"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.0.0",
+      "@babel/preset-env": "^7.0.0",
+      "babel-loader": "^8.0.2",
+      "clean-webpack-plugin": "^0.1.19",
+      "css-loader": "^1.0.0",
+      "duplicate-package-checker-webpack-plugin": "^3.0.0",
+      "extract-loader": "^2.0.1",
+      "file-loader": "^2.0.0",
+      "html-loader": "^0.5.5",
+      "html-webpack-plugin": "^3.2.0",
+      "node-sass": "^4.9.3",
+      "sass-loader": "^7.1.0",
+      "style-loader": "^0.23.0",
+      "url-loader": "^1.1.1",
+      "webpack": "^4.17.1",
+      "webpack-cli": "^3.1.0",
+      "webpack-dev-server": "^3.1.7"
+    },
+    "dependencies": {}
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\Windows\system32\cmd.exe
+  Arguments: /d /s /c yarn build-dev && yarn demo
+  Directory: C:\Users\A153865\Documents\wc-tree
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Users\A153865\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Users\A153865\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Users\A153865\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:30281:17)
+      at ChildProcess.emit (events.js:182:13)
+      at maybeClose (internal/child_process.js:961:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:248:5)
